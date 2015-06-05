@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/red"
+        android:src = "@drawable/redsquare"
+        android:layout_alignTop="@+id/orange"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Click" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/blue"
+        android:src = "@drawable/bluesquare"
+        android:layout_alignTop="@+id/green"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/orange"
+        android:layout_marginBottom="43dp"
+        android:src = "@drawable/orangesquare"
+        android:layout_above="@+id/green"
+        android:layout_alignLeft="@+id/blue"
+        android:layout_alignStart="@+id/blue" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/green"
+        android:layout_marginBottom="75dp"
+        android:src = "@drawable/greensquare"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/nextRound"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/blue"
+        android:layout_alignLeft="@+id/blue"
+        android:textColor="#66FF00"
+        android:background="#000000"
+        />
+
+    <TextView
+        android:layout_width="98sp"
+        android:layout_height="48sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Level: "
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/orange"
+        android:layout_alignStart="@+id/orange"
+        android:gravity = "center"
+        android:textSize = "18sp"
+        android:textColor="#66FF00"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="48sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:gravity = "center"
+        android:textSize = "18sp"
+        android:textColor="#66FF00"
+        android:background="#000000"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="High Score"
+        android:id="@+id/scoreHigh"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#66FF00"
+        android:background="#000000"/>
+
+    <CheckBox
+        android:layout_width="150sp"
+        android:layout_height="48sp"
+        android:text="SlowerSpeed"
+        android:id="@+id/checkBox"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#66FF00"
+        android:background="#000000"
+        android:textSize = "18sp"
+        android:onClick = "onCheckboxClicked"
+        android:checked="false" />
+
+</RelativeLayout>

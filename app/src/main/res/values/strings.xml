@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Four Box</string>
+    <string name="saved_high_score"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_high_score_menu">HighScoreMenu</string>
+</resources>
